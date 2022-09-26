@@ -1,0 +1,49 @@
+
+nav{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+nav .logo{
+    position: relative;
+    float: left;
+    left: 10%;
+    width: 120px;
+    height: 50px;
+}
+nav ul{
+    width: auto;
+    height: 60px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav li{
+    float: right;
+    margin-right: 6%;
+    position: relative;
+    width: 8%;
+}
+nav li a{
+    display: block;
+    color: black;
+    height: 60px;
+    display: flex;
+	justify-content: center; 
+	align-items: center; 
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav li a:hover{
+    color: white;
+    background-color: black;
+}
+body{
+    background-image: url("../R-C.jpg");
+    background-position-x: 80%;
+}
