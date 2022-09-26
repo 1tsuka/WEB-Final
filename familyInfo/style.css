@@ -129,3 +129,7 @@ form button{
     height: 60px;
     text-align: justify;
 }
+#male,#female{
+    width: 10px;
+    margin: 0;
+}
