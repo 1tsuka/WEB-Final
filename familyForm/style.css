@@ -9,7 +9,7 @@
 }
 @font-face {
     font-family: "GOT";
-    src: url(/font/GameofThrones.ttf);
+    src: url(../font/GameofThrones.ttf);
 }
 body{
     display: flex;
