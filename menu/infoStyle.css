@@ -87,6 +87,7 @@ body{
 .content{
     display: inline-flex;
     font-size: 16px;
+    margin-left: 15px;
 }
 .navigation{
     width: 55%;
