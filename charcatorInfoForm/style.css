@@ -1,0 +1,108 @@
+@import url("../normalize.css");
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+    font-family: "阿里巴巴普惠体 2.0 45 Light";
+    font-weight: 300;
+    src: url("//at.alicdn.com/wf/webfont/DAKi4vov5QYn/MnSrXcmi-vmL_Xki3iwY9.woff2") format("woff2"),
+        url("//at.alicdn.com/wf/webfont/DAKi4vov5QYn/WZJ8yExtzrm7UBrNMTJcm.woff") format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "GOT";
+    src: url(/font/Game\ of\ Thrones.ttf);
+}
+body{
+    margin: 0;
+}
+nav{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+nav .logo{
+    position: relative;
+    float: left;
+    top: 5%;
+    left: 10%;
+    width: 120px;
+    height: 50px;
+    font-family: "GOT";
+    color: rgb(35, 35, 35);
+}
+nav .logo span{
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    width: 30%;
+    height: 60px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    position: relative;
+    right: 5%;
+    float: right;
+}
+nav li{
+    width: 50%;
+}
+nav li a{
+    color: black;
+    height: 60px;
+    display: flex;
+	justify-content: center; 
+	align-items: center; 
+    text-decoration: none;
+    font-size: 20px;
+}
+nav li a:hover{
+    color: white;
+    background-color: black;
+}
+.shortcut{
+    color: rgb(58, 188, 189);
+}
+form{
+    width: 80%;
+    position: relative;
+    top: 80px;
+    left: 10%;
+    padding-bottom: 60px;
+}
+.items{
+    margin: 20px 0;
+}
+.work{
+    margin: 15px 0;
+}
+textarea{
+    width: 100%;
+}
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+    font-size: 30px;
+}
+.submit{
+    width: 100px;
+    height: 30px;
+    float: right;
+}
+label{
+    margin-right: 10px;
+}
+.brief div{
+    margin: 10px 0;
+}
+fieldset{
+    margin: 30px 0;
+}
+#photo{
+    margin-top: 20px;
+}

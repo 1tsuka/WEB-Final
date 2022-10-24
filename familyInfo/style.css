@@ -1,0 +1,132 @@
+@import url("../normalize.css");
+@font-face {
+    font-family: "GOT";
+    src: url(/font/Game\ of\ Thrones.ttf);
+}
+nav{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+nav .logo{
+    position: relative;
+    float: left;
+    top: 5%;
+    left: 10%;
+    width: 120px;
+    height: 50px;
+    font-family: "GOT";
+    color: rgb(35, 35, 35);
+}
+nav .logo span{
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    width: auto;
+    height: 60px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    float: right;
+    width: 30%;
+}
+nav li{
+    width: 50%;
+}
+nav li a{
+    color: black;
+    height: 60px;
+    display: flex;
+	justify-content: center; 
+	align-items: center; 
+    text-decoration: none;
+    font-size: 20px;
+}
+nav li a:hover{
+    color: white;
+    background-color: black;
+}
+.shortcut{
+    color: rgb(58, 188, 189);
+}
+main{
+    position: relative;
+    height: auto;
+    top: 80px;
+    display: block;
+}
+.navi{
+    position: fixed;
+    width: 20%;
+    height: auto;
+    top: 90px;
+}
+.navi ul{
+    list-style-type: none;
+    padding: 10px;
+    margin-top: 3%;
+    border-right: 1px solid black;
+}
+.navi li{
+    margin: 10px 0;
+}
+.navi li a{
+    text-decoration: none;
+    color: black;
+}
+article{
+    position: relative;
+    left: 20%;
+    width: 55%;
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+article h2 a{
+    text-decoration: none;
+    color: black;
+}
+article h2 a:hover{
+    text-decoration: underline;
+}
+article h2:target{
+    scroll-margin-top: 5rem;
+}
+aside{
+    position: fixed;
+    top: 90px;
+    left: 80%;
+}
+aside ul{
+    border-left: 1px solid black;
+}
+aside li a{
+    text-decoration: none;
+    color: black;
+}
+.relation_image{
+    width: 100%;
+}
+button{
+    float: right;
+    width: 100px;
+    height: 30px;
+}
+button:hover{
+    cursor: pointer;
+}
+@media only screen and (max-width: 576px) { 
+    aside{
+        display: none;
+    }
+    article{
+        width: 90%;
+        left: 5%;
+    }
+}
