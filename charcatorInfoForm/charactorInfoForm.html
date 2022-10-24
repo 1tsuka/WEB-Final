@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Game of Throne</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <span class="game">
+              <span class="shortcut">G</span>
+              <span>ame</span>
+            </span>
+            <span class="of">
+              <span class="shortcut">O</span>
+              <span>f</span>
+            </span>
+            <span class="thrones">
+              <span class="shortcut">T</span>
+              <span>hrones</span>
+            </span> 
+        </div>
+        <ul>
+            <li><a href="../index/index.html" class="item">首页</a></li>
+            <li><a href="../menu/familyInfoMenu.html" class="item">百科</a></li>
+        </ul>
+    </nav>
+    <form>
+        <div class="infoForm">
+            <fieldset>
+                <legend>角色信息</legend>
+                <div class="items">
+                    <label for="charactorName">角色名字</label>
+                    <input type="text" name="charactorName" id="charactorName" required>
+                    <label for="house">所属家族</label>
+                    <select name="house" id="house">
+                        <option value="stack">史塔克家族</option>
+                        <option value="lannister">兰尼斯特家族</option>
+                        <option value="tyrell">提利尔家族</option>
+                        <option value="barathone">拜拉席恩家族</option>
+                        <option value="tully">徒利家族</option>
+                        <option value="arryn">艾林家族</option>
+                        <option value="geryjoy">葛雷乔伊家族</option>
+                        <option value="martell">马泰尔家族</option>
+                        <option value="targaren">坦格利安家族</option>
+                    </select>
+                </div>
+                <div class="items brief">
+                    <h2>简介</h2>
+                    <div>
+                        <textarea name="brief" id="brief" cols="150" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <label for="englishName">英文名</label>
+                        <input type="text" name="englishName" id="englishName">
+                    </div>
+                    <div>
+                        <span>性别</span>
+                        <input type="radio" id="male" name="sex" value="male">
+                        <label for="male">男</label> 
+                        <input type="radio" id="female" name="sex" value="female">
+                        <label for="male">女</label> 
+                    </div>
+                    <div>
+                        <label for="birthday">生日</label>
+                        <span>伊耿历</span>
+                        <input type="number" id="number">
+                        <span>年</span>
+                    </div>
+                    <div>
+                        <label for="father">父亲</label>
+                        <input type="text" name="father" id="father">
+                    </div>
+                    <div>
+                        <label for="mother">母亲</label>
+                        <input type="text" name="mother" id="mother">
+                    </div>
+                    <div>
+                        <label for="icon">照片(画像)</label>
+                        <input type="file" class="photo" id="icon" name="icon" accept="image/png, image/jpeg">
+                    </div>
+                </div>
+                <div class="item longText">
+                    <h2>性格和外貌</h2>
+                    <textarea name="personality" id="personality" cols="150" rows="3">></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>演员信息</legend>
+                <div class="items">
+                    <label for="actorName">演员名字</label>
+                    <input type="text" id="actorName" name="actorName" required>
+                </div>
+                <div class="items">
+                    <h2>基本信息</h2>
+                    <textarea name="basicInfo" id="basicInfo" cols="150" rows="3"></textarea>
+                    <br>
+                    <label for="photo">照片</label>
+                    <input type="file" id="photo" name="photo" accept="image/png, image/jpeg">
+                </div>
+                <div class="items">
+                    <h2>演艺经历</h2>
+                    <textarea name="performingEXP" id="performingExp" cols="150" rows="3"></textarea>
+                </div>
+                <div class="items">
+                    <h2>作品</h2>
+                    <div class="work">
+                        <label for="time">时间: </label>
+                        <input type="number" id="time" name="time">
+                        <label for="type">类型: </label>
+                        <select name="type" id="type">
+                            <option value="film">电影</option>
+                            <option value="TVSeries">电视剧</option>
+                            <option value="play">舞台剧</option>
+                            <option value="opera">歌剧</option>
+                        </select>
+                        <label for="workName">作品名字: </label>
+                        <input type="text" name="workName" id="workName">
+                        <button>删除</button>
+                    </div>
+                    <button>新增作品</button>
+                </div>
+            </fieldset>
+        </div>
+        <input type="submit" value="提交" class="submit">
+    </form>
+</body>
