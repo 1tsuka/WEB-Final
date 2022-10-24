@@ -30,5 +30,5 @@ for(var i=0;i<item.length;i++){
 }
 
 function toModify(){
-    window.location.href="../charcatorInfo_form/charactorInfoForm.html"
+    window.location.href="../charcatorInfoForm/charactorInfoForm.html"
 }
