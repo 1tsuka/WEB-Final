@@ -1,0 +1,61 @@
+@import url("../normalize.css");
+@font-face {
+    font-family: "GOT";
+    src: url(../font/GameofThrones.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    font-family: "GOT";
+    color: rgb(236, 236, 236);
+    position: absolute;
+    margin: auto;
+    left: 0; 
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.shortcut{
+    color: rgb(58, 188, 189);
+}
+.logo button{
+    background-color: rgb(58, 188, 189);
+    color: rgb(236, 236, 236);
+    border: none;
+    width: 64px;
+    height: 36px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.logo span{
+    word-spacing: -40px;
+}
+.game{
+    font-size: 60px;
+}
+.of{
+    font-size: 40px;
+}
+.thrones{
+    font-size: 60px;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
