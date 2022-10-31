@@ -1,8 +1,6 @@
 {
   "dependencies": {
     "jquery": "^3.6.1",
-    "nivo-slider": "^3.2.0",
-    "sticky-sidebar": "^3.3.1",
-    "webticker": "^3.0.0"
+    "nivo-slider": "^3.2.0"
   }
 }
