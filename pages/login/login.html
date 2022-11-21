@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Game of Throne</title>
+    <link rel="stylesheet" href="../../template/header/header.css"/>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div id="loginArea">
+        <h1>LOGIN</h1>
+        <div class="userItem">
+            <!-- <label for="userName">用户名: </label> -->
+            <input type="text" name="userName" id="userName" placeholder="username">
+        </div>
+        <div class="userItem">
+            <!-- <label for="userPwd">密码: </label> -->
+            <input type="password" name="userPwd" id="userPwd" placeholder="password">
+        </div>
+        <div id="errorMsg"></div>
+        <button type="button" id="loginBtn">登录</button>
+    </div>    
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/ajax/lib/ajax.js"></script>
+    <script src="../../carhartl-jquery-cookie-92b7715/jquery.cookie.js"></script>
+    <script type="text/javascript" src="login.js"></script>
+</body>

@@ -1,0 +1,51 @@
+@import url("../../normalize.css");
+body{
+    height: 100%;
+    background-color: #DFE9F5;
+    margin: 0;
+}
+#loginArea{
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    width: 350px;
+    padding: 2rem 0 1rem 0;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 10px;
+}
+.userItem{
+    display: flex;
+    margin: 10px;
+}
+.userItem input{
+    margin: 0 5px;
+    background-color: #DFE9F5;
+    width: 15rem;
+    height: 1.5rem;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none
+}
+#loginArea button{
+    font-size: 1.2rem;
+    width:60%;
+    height: 10%;
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#loginArea button:hover{
+    background-color: cornflowerblue;
+    color: white;
+}
+#errorMsg{
+    color: #FF0000;
+}

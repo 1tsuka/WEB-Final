@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "GOT";
+    src: url(../../font/GameofThrones.ttf);
+}
+nav{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+nav .logo{
+    position: relative;
+    float: left;
+    top: 5%;
+    left: 10%;
+    width: 120px;
+    height: 50px;
+    font-family: "GOT";
+    color: rgb(35, 35, 35);
+}
+nav .logo span{
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    width: 30%;
+    height: 60px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    position: relative;
+    right: 5%;
+    float: right;
+}
+nav li{
+    width: 50%;
+}
+nav li a{
+    color: black;
+    height: 60px;
+    display: flex;
+	justify-content: center; 
+	align-items: center; 
+    text-decoration: none;
+    font-size: 20px;
+}
+nav li a:hover{
+    color: white;
+    background-color: black;
+}
+.shortcut{
+    color: rgb(58, 188, 189);
+}

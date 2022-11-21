@@ -1,0 +1,20 @@
+<nav>
+    <div class="logo">
+        <span class="game">
+            <span class="shortcut">G</span>
+            <span>ame</span>
+        </span>
+        <span class="of">
+            <span class="shortcut">O</span>
+            <span>f</span>
+        </span>
+        <span class="thrones">
+            <span class="shortcut">T</span>
+            <span>hrones</span>
+        </span>
+    </div>
+    <ul>
+        <li><a href="../index/index.html" class="item">首页</a></li>
+        <li><a href="../menu/familyInfoMenu.html" class="item">百科</a></li>
+    </ul>
+</nav>

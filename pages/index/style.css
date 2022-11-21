@@ -1,0 +1,144 @@
+@import url("../../normalize.css");
+@font-face {
+    font-family: "GOT";
+    src: url(../../font/GameofThrones.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    font-family: "GOT";
+    color: rgb(236, 236, 236);
+    position: absolute;
+    /* margin: auto; */
+    left: 45%; 
+    /* right: 0;
+    top: 0;
+    bottom: 0; */
+    height: auto;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.shortcut{
+    color: rgb(58, 188, 189);
+}
+.btn{
+    background-color: rgb(58, 188, 189);
+    color: rgb(236, 236, 236);
+    border: none;
+    width: 64px;
+    height: 36px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.logo span{
+    word-spacing: -40px;
+}
+/* .game{
+    font-size: 60px;
+}
+.of{
+    font-size: 40px;
+}
+.thrones{
+    font-size: 60px;
+} */
+.background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.head{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid gainsboro;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    
+}
+.nav ul{
+    display: inline-flex;
+    position: fixed;
+    top: 80px;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gainsboro;
+}
+.nav li{
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+.tag{
+    color: white;
+}
+.loginArea{
+    position: absolute;
+    right: 5%;
+}
+#loginBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(58, 188, 189);
+    border-radius: 5px;
+    /* position: absolute;
+    top: 20px;
+    right: 5%; */
+    border: none;
+    cursor: pointer;
+}
+#loginBtn:hover{
+    font-weight: bold;
+}
+#loginInfo{
+    /* position: absolute;
+    right: 5%; */
+    color: white;
+    cursor: pointer;
+    display: block;
+}
+#user{
+    list-style: none;
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: whitesmoke;
+    width: 100px;
+    height: 30px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#user li:hover{
+    cursor: pointer;
+}
