@@ -4,64 +4,13 @@
     font-family: "GOT";
     src: url(../font/GameofThrones.ttf);
 }
-nav{
-    background-color: whitesmoke;
-    width: 100%;
-    height: 60px;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    z-index: 1;
-}
-nav .logo{
-    position: relative;
-    float: left;
-    top: 5%;
-    left: 10%;
-    width: 120px;
-    height: 50px;
-    font-family: "GOT";
-    color: rgb(35, 35, 35);
-}
-nav .logo span{
-    display: flex;
-    justify-content: center;
-}
-nav ul{
-    width: 30%;
-    height: 60px;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: inline-flex;
-    position: relative;
-    right: 5%;
-    float: right;
-}
-nav li{
-    width: 50%;
-}
-nav li a{
-    color: black;
-    height: 60px;
-    display: flex;
-	justify-content: center; 
-	align-items: center; 
-    text-decoration: none;
-    font-size: 20px;
-}
-nav li a:hover{
-    color: white;
-    background-color: black;
-}
-.shortcut{
-    color: rgb(58, 188, 189);
-}
 body{
-    position: absolute;
-    top: 80px;
+    margin: 0;
+    padding: 0;
 }
 .houses{
+    position: absolute;
+    top: 100px;
     display: inline-flex;
     text-decoration: none;
     border-bottom: 1px solid grey;
@@ -127,11 +76,10 @@ body{
     height: 80px;
     width: 80px;
 }
-.buttonIcon{
-    mask-image: url('/more.svg');
-}
 @media only screen and (max-width: 576px) { 
     .houses{
+        position: absolute;
+        top: 140px;
         display: flex;
         flex-direction: column;
     }
@@ -152,6 +100,8 @@ body{
 }
 @media only screen and (min-width: 576px) and (max-width: 768px){
     .houses{
+        position: absolute;
+        top: 140px;
         display: flex;
         flex-direction: column;
     }
@@ -171,6 +121,8 @@ body{
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
     .houses{
+        position: absolute;
+        top: 140px;
         display: flex;
         flex-direction: column;
     }

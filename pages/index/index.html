@@ -5,51 +5,41 @@
         <meta name="viewport" content="width=device-width" />
         <title>Game of Throne</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="../../template/header/header.css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
     </head>
     <body>
-        <img src="../../material/background.png" class="background" alt="" />
-        <!-- <video src="../index_background.mp4" class="background" autoplay="autoplay" loop="loop" muted="muted"></video> -->
-        <div class="head">
-            <div class="logo">
-                <span class="game">
-                    <span class="shortcut">G</span>
-                    <span>ame</span>
-                </span>
-                <span class="of">
-                    <span class="shortcut">O</span>
-                    <span>f</span>
-                </span>
-                <span class="thrones">
-                    <span class="shortcut">T</span>
-                    <span>hrones</span>
-                </span>
+        <div id="header"></div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p>Most man rather deny the turth than face it.</p>
+                    <p>大部分的人宁可否认事实，也不愿面对真相。</p>
+                    <p>————提里昂</p>
+                </div>
+                <div class="swiper-slide">
+                    <p>It was queer how sometimes a child's innocent eyes can see things that grown men are blind to.</p>
+                    <p>说来奇怪，有时孩子无知的眼睛，反而能看到成年人视而不见的事实。</p>
+                    <p>————奈德</p>
+                </div>
+                <div class="swiper-slide">
+                    <p>If we attempt to silence this talk, we only lend it credence. Better to treat it with contempt, like the pathetic lie it is.</p>
+                    <p>假如我们试图制止谣言，只会显得真有其事，还不如嗤之以鼻，反正不过是个可笑的谎言。</p>
+                    <p>——小指头</p>
+                </div>
             </div>
-            <div class="loginArea">
-                <button type="button" id="loginBtn">登录</button>
-                <div id="loginInfo"></div>
-                <ul id="user">
-                    <li id="logout">注销</li>
-                </ul>
-            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
-        <div class="nav">
-            <ul>
-                <li id="houses">
-                    <a href="javascript:void(0)"
-                        >家族<ion-icon
-                            name="chevron-down-outline"
-                            id="tag"
-                        ></ion-icon
-                    ></a>
-                </li>
-                <li><a href="../menu/familyInfoMenu.html">菜单</a></li>
-                <li><a href="">地图</a></li>
-                <li><a href="">历史</a></li>
-            </ul>
-        </div>
-        <!-- <button onclick="window.location.href='../menu/familyInfoMenu.html'">ENTER</button> -->
-        <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="../../jquery.rotate-0.3.0/jquery.rotate.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/ajax@0.0.4/lib/ajax.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jqueryrotate-slevomat-fork@1.0.0/jQueryRotate.min.js"></script>
         <script
             type="module"
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -58,9 +48,7 @@
             type="module"
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
         ></script>
-        <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="../../node_modules/ajax/lib/ajax.js"></script>
-        <script src="../../carhartl-jquery-cookie-92b7715/jquery.cookie.js"></script>
+        <script src="../../template/header/header.js"></script>
         <script src="script.js"></script>
     </body>
 </html>

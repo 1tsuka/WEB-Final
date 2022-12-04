@@ -1,3 +1,9 @@
+var headerUrl = "../../template/header/header.tql";
+
+$.get(headerUrl, function (result) {
+    $("#header").html(result);
+});
+
 function addWork(){
     var types = [
         ["电影", "film"],

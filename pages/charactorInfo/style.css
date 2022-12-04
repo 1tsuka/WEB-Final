@@ -26,7 +26,7 @@ body{
     position: relative;
     width: calc(100vh-150px-200px);
     height: auto;
-    top: 90px;
+    top: 120px;
     color: black;
     margin-bottom: 200px;
 }
@@ -37,7 +37,7 @@ body{
     display: none;
 }
 .charactor_info,.actor_info{
-    padding: 0 20px;
+    padding: 0 40px;
 }
 .content a{
     text-decoration: none;
@@ -153,15 +153,15 @@ button:hover{
         display: none;
     }
     .tab{
-        position: fixed;
-        top: 60px;
-        left: 0px;
-        width: 100%;
+        position: absolute;
+        top: 170px;
+        left: 37%;
+        width: 26%;
         height: 50px;
         /* justify-content: center;
         align-items: center; */
         background-color: whitesmoke;
-        border-top: 1px solid black;
+        border-radius: 20px;
     }
     .tab ul{
         display: inline-flex;
@@ -175,6 +175,7 @@ button:hover{
         align-items: center;
         justify-content: center;
         width: 50%;
+        border-radius: 20px;
     }
     .tab:first-child{
         background-color: black;

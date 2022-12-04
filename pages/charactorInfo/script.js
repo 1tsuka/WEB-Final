@@ -1,3 +1,9 @@
+var headerUrl = "../../template/header/header.tql";
+
+$.get(headerUrl, function (result) {
+    $("#header").html(result);
+});
+
 var item = document.querySelector('.tab').querySelectorAll('li');
 var content = [];
 var charactor_info = document.getElementsByClassName('charactor_info');

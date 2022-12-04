@@ -1,64 +1,12 @@
 @import url("../normalize.css");
-@font-face {
-    font-family: "GOT";
-    src: url(../font/GameofThrones.ttf);
-}
-nav{
-    background-color: whitesmoke;
-    width: 100%;
-    height: 60px;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    z-index: 1;
-}
-nav .logo{
-    position: relative;
-    float: left;
-    top: 5%;
-    left: 10%;
-    width: 120px;
-    height: 50px;
-    font-family: "GOT";
-    color: rgb(35, 35, 35);
-}
-nav .logo span{
-    display: flex;
-    justify-content: center;
-}
-nav ul{
-    width: auto;
-    height: 60px;
-    list-style-type: none;
+body{
     padding: 0;
     margin: 0;
-    display: inline-flex;
-    float: right;
-    width: 30%;
-}
-nav li{
-    width: 50%;
-}
-nav li a{
-    color: black;
-    height: 60px;
-    display: flex;
-	justify-content: center; 
-	align-items: center; 
-    text-decoration: none;
-    font-size: 20px;
-}
-nav li a:hover{
-    color: white;
-    background-color: black;
-}
-.shortcut{
-    color: rgb(58, 188, 189);
 }
 .main-content{
     position: relative;
     height: auto;
-    top: 80px;
+    top: 140px;
     display: block;
 }
 .navi{
@@ -96,11 +44,11 @@ nav li a:hover{
     text-decoration: underline;
 }
 .content h2:target{
-    scroll-margin-top: 5rem;
+    scroll-margin-top: 8rem;
 }
 .sidebar{
     position: fixed;
-    top: 90px;
+    top: 140px;
     left: 80%;
 }
 .sidebar ul{

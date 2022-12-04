@@ -1,43 +1,18 @@
-var show = false;
-var userName = $.cookie('userName');
-console.log(userName)
+var headerUrl = "../../template/header/header.tql";
 
-if(userName != undefined){
-    $('#loginBtn').hide();
-    $('#loginInfo').text('您好，'+userName);
-}
-else{
-    $('#loginBtn').show();
-    $('#loginInfo').text('');
-}
+$.get(headerUrl, function (result) {
+    $("#header").html(result);
+});
 
-$('#houses').on("click",function(){
-    if(show == false){
-        show = true;
-        $('#tag').animate({rotate: '-180'}, 500);
-        $('ul').append
-    }
-    else{
-        show = false;
-        $('#tag').animate({rotate: '0'}, 500);
-    }
-})
+var mySwiper = new Swiper(".swiper", {
+    direction: "horizontal", // 垂直切换选项
+    loop: true, // 循环模式选项
+    autoplay: true,
 
-$('#loginBtn').on('click',function(){
-    window.location.href = '../login/login.html'
-})
+    // 如果需要前进后退按钮
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 
-$('#loginInfo').on('click',function(){
-    var user = $('#user')
-    if(user.is(':hidden')){
-        user.css("display","flex");
-    }
-    else{
-        user.hide()
-    }
-})
-
-$('#logout').on('click',function(){
-    $.removeCookie('userName',{expires: 7, path: '/pages' })
-    location.reload();
-})
+});

@@ -2,45 +2,62 @@
     font-family: "GOT";
     src: url(../../font/GameofThrones.ttf);
 }
-nav{
-    background-color: whitesmoke;
+#header{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.2));
+    position: fixed;
     width: 100%;
-    height: 60px;
-    position: relative;
+    top: 0;
+    z-index: 10;
+}
+#nav{
+    width: 100%;
+    height: 70px;
     top: 0%;
     left: 0%;
-    z-index: 1;
+    /* z-index: 1; */
+    border-bottom: 1px solid white;
+    color: white;
+
 }
-nav .logo{
-    position: relative;
+#nav .logo{
+    position: absolute;
     float: left;
-    top: 5%;
-    left: 10%;
+    top: 10px;
+    left: 8%;
     width: 120px;
     height: 50px;
     font-family: "GOT";
-    color: rgb(35, 35, 35);
+    /* color: rgb(35, 35, 35); */
+    display: flex;
+    flex-direction: column;
 }
-nav .logo span{
+#nav .logo div{
     display: flex;
     justify-content: center;
 }
-nav ul{
-    width: 30%;
+#nav .logo span{
+    width: auto;
+}
+#menu ul{
+    width: auto;
     height: 60px;
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: inline-flex;
     position: relative;
-    right: 5%;
+    right: 160px;
+    top: 6px;
     float: right;
 }
-nav li{
-    width: 50%;
+#menu ul li{
+    font-size: 10px;
+    width: 60px;
+    margin: 0 6px;
+    align-content: center;
 }
-nav li a{
-    color: black;
+#menu ul a{
+    color: white;
     height: 60px;
     display: flex;
 	justify-content: center; 
@@ -48,10 +65,108 @@ nav li a{
     text-decoration: none;
     font-size: 20px;
 }
-nav li a:hover{
-    color: white;
-    background-color: black;
-}
 .shortcut{
     color: rgb(58, 188, 189);
+}
+.loginArea{
+    position: absolute;
+    right: 30px;
+    height: 70px;
+    top: 0px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loginBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(58, 188, 189);
+    border-radius: 5px;
+    /* position: absolute;
+    top: 20px;
+    right: 5%; */
+    border: none;
+    cursor: pointer;
+    margin: 20px 0;
+}
+#loginBtn:hover{
+    font-weight: bold;
+}
+#loginInfo{
+    /* position: absolute;
+    right: 5%; */
+    color: white;
+    cursor: pointer;
+    display: block;
+}
+#user{
+    padding: 0;
+    color: white;
+    list-style: none;
+    display: none;
+    position: absolute;
+    text-align: center;
+    /* background-color: whitesmoke; */
+    width: 100px;
+    height: 30px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 70px;
+    background-color: cornflowerblue;
+}
+#user li:hover{
+    cursor: pointer;
+}
+#houseMenu{
+    width: 100%;
+    height: 36px;
+    border-bottom: 1px solid white;
+}
+#houseMenu ul{
+    padding: 0;
+    margin: 0   ;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+#houseMenu li{
+    margin: 0 7px;
+}
+#houseMenu li a{
+    color: white;
+    text-decoration: none;
+}
+#houseMenu li a:hover{
+    text-decoration: underline;
+}
+@media only screen and (max-width: 992px){
+    #nav{
+        height: 130px;
+    }
+    #menu ul{
+        top: 70px;
+        width: 100%;
+        right: 0;
+        /* display: none; */
+        border-top: 1px solid black;
+    }
+    #menu ul li{
+        width: calc(100%/3);
+    }
+    .logo{
+        left: 10px;
+    }
+    #houseMenu{
+        top: 140px;
+    }
 }

@@ -8,7 +8,7 @@ body{
     position: absolute;
     top: 20%;
     left: 38%;
-    width: 350px;
+    width: 360px;
     padding: 2rem 0 1rem 0;
     height: 60%;
     display: flex;
@@ -48,4 +48,9 @@ body{
 }
 #errorMsg{
     color: #FF0000;
+}
+@media only screen and (max-width: 576px){
+    #loginArea{
+        left: 0%;
+    }
 }

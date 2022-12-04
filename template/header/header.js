@@ -1,46 +1,62 @@
-import 'jquery'
+var headerUrl = "../../template/header/header.tql";
 
-var show = false;
-var userName = $.cookie('userName');
-var houseMenu = '<div id="houseMenu"><ul><li>史塔克家族</li><li>拉尼斯特家族</li><li>提利尔家族</li><li>更多···</li></ul></div>'
-if(userName != undefined){
-    $('#loginBtn').hide();
-    $('#loginInfo').text('您好，'+userName);
-}
-else{
-    $('#loginBtn').show();
-    $('#loginInfo').text('');
-}
+$.get(headerUrl, function (result) {
+    $("#header").html(result);
+});
+window.onload = function () {
 
-$('#houses').on("click",function(){
-    if(show == false){
-        show = true
-        $('#tag').animate({rotate: '-180'}, 500);
-        $('#nav').after(houseMenu);
-        $('#houseMenu').animate({})
+    var houseMenuUrl = "../../template/houseMenu/houseMenu.tql";
+    var show = false;
+    var userName = $.cookie("userName");
+
+    if (userName != undefined) {
+        $("#loginBtn").hide();
+        $("#loginInfo").text("您好，" + userName);
+    } else {
+        $("#loginBtn").show();
+        $("#loginInfo").text("");
     }
-    else{
-        show = false;
-        $('#tag').animate({rotate: '0'}, 500);
-        $('#houseMenu').remove();
-    }
-})
 
-$('#loginBtn').on('click',function(){
-    window.location.href = '../login/login.html'
-})
+    $("#houses").on("click", function () {
+        if (show == false) {
+            show = true;
+            $("#tag").rotate({ animateTo: -180, duration: 600 });
+            $.get(houseMenuUrl, function (result) {
+                $("#nav").after(result);
+            });
+        } else {
+            show = false;
+            $("#tag").rotate({ animateTo: 0, duration: 600 });
+            $("#houseMenu").remove();
+        }
+    });
 
-$('#loginInfo').on('click',function(){
-    var user = $('#user')
-    if(user.is(':hidden')){
-        user.css("display","flex");
-    }
-    else{
-        user.hide()
-    }
-})
+    $("#loginBtn").on("click", function () {
+        window.location.href = "../login/login.html";
+    });
 
-$('#logout').on('click',function(){
-    $.removeCookie('userName',{expires: 7, path: '/pages' })
-    location.reload();
-})
+    $("#loginInfo").on("click", function () {
+        var user = $("#user");
+        if (user.is(":hidden")) {
+            user.css("display", "flex");
+        } else {
+            user.hide();
+        }
+    });
+
+    $("#logout").on("click", function () {
+        $.removeCookie("userName", { expires: 7, path: "/pages" });
+        location.reload();
+    });
+
+    $(document).on('scroll',function() {
+        var scroH = $(window).scrollTop();
+        
+        if(scroH != 0){
+            $('#header').css("background","linear-gradient(to bottom,rgba(169,169,169,1),rgba(169,169,169,1))")
+        }
+        else{
+            $('#header').css("background","linear-gradient(to bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.2))")
+        }
+    });
+};
