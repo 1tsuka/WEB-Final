@@ -149,14 +149,18 @@ button:hover{
     margin: 20px;
 }
 @media only screen and (max-width: 992px){
+    .icon{
+        height: 200px;
+        width: 144px;
+    }
     .menu{
         display: none;
     }
     .tab{
         position: absolute;
-        top: 170px;
-        left: 37%;
-        width: 26%;
+        top: 220px;
+        left: 40px;
+        width: 150px;
         height: 50px;
         /* justify-content: center;
         align-items: center; */
