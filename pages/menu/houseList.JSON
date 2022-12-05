@@ -1,0 +1,52 @@
+{
+    "houses":[
+        {
+            "houseUrl" : "../familyInfo/familyInfo_stack.html",
+            "houseName" : "史塔克家族(House Stark of Winterfell)",
+            "houseImgUrl" : "../../material/image/houses/houseStack.webp",
+            "intro" : "第一代祖先是筑城者布兰登，维斯特洛最纯正的先民血裔。世世代代为北境之王，直到降服王托伦·史塔克自知不敌征服者伊耿·坦格利安的三只龙及强大军队后投降。宣誓效忠的家族有葛洛佛、波顿、菲林特、曼德勒、莫尔蒙、陶哈、赛文、安柏家族等。",
+            "charactors" : [
+                {
+                    "charactorName" : "琼恩·雪诺(这个能看)",
+                    "charactorIconUrl" : "../../material/image/JonSnow/Jon_Snow_by_AniaEm.jpg",
+                    "charactorInfoUrl" : "../charactorInfo/charctorInfo.html"
+                },
+                {
+                    "charactorName" : "艾莉亚·史塔克",
+                    "charactorIconUrl" : "../../material/image/AryaStark.webp",
+                    "charactorInfoUrl" : "../charactorInfo/charctorInfo.html"
+                },
+                {
+                    "charactorName" : "布兰·史塔克",
+                    "charactorIconUrl" : "../../material/image/BranStark.webp",
+                    "charactorInfoUrl" : "../charactorInfo/charctorInfo.html"
+                },
+                {
+                    "charactorName" : "罗柏·史塔克",
+                    "charactorIconUrl" : "../../material/image/RobbStack.webp",
+                    "charactorInfoUrl" : "../charactorInfo/charctorInfo.html"
+                },
+                {
+                    "charactorName" : "珊莎·史塔克",
+                    "charactorIconUrl" : "../../material/image/SansaStark.webp",
+                    "charactorInfoUrl" : "../charactorInfo/charctorInfo.html"
+                },
+                {
+                    "charactorName" : "瑞肯·史塔克",
+                    "charactorIconUrl" : "../../material/image/RickonStark.jpg",
+                    "charactorInfoUrl" : "../charactorInfo/charctorInfo.html"
+                },
+                {
+                    "charactorName" : "艾德·史塔克",
+                    "charactorIconUrl" : "../../material/image/NedStack.webp",
+                    "charactorInfoUrl" : "../charactorInfo/charctorInfo.html"
+                },
+                {
+                    "charactorName" : "凯特琳·徒利",
+                    "charactorIconUrl" : "../../material/image/CatelynTully.webp",
+                    "charactorInfoUrl" : "../charactorInfo/charctorInfo.html"
+                }
+            ]
+        }
+    ]
+}

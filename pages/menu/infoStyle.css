@@ -1,4 +1,4 @@
-@import url("../normalize.css");
+@import url("../../normalize.css");
 /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
 @font-face {
     font-family: "GOT";
@@ -8,9 +8,11 @@ body{
     margin: 0;
     padding: 0;
 }
-.houses{
+#houseList{
     position: absolute;
     top: 100px;
+}
+.house{
     display: inline-flex;
     text-decoration: none;
     border-bottom: 1px solid grey;
@@ -76,10 +78,11 @@ body{
     height: 80px;
     width: 80px;
 }
-@media only screen and (max-width: 576px) { 
-    .houses{
-        position: absolute;
-        top: 140px;
+@media only screen and (max-width: 576px) {
+    #houseList{
+        top: 150px;
+    } 
+    .house{
         display: flex;
         flex-direction: column;
     }
@@ -99,9 +102,10 @@ body{
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px){
-    .houses{
-        position: absolute;
-        top: 140px;
+    #houseList{
+        top: 150px;
+    } 
+    .house{
         display: flex;
         flex-direction: column;
     }
@@ -120,9 +124,10 @@ body{
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
-    .houses{
-        position: absolute;
-        top: 140px;
+    #houseList{
+        top: 150px;
+    } 
+    .house{
         display: flex;
         flex-direction: column;
     }
