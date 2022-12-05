@@ -8,44 +8,77 @@
             "charactors" : [
                 {
                     "charactorName" : "琼恩·雪诺(这个能看)",
-                    "charactorIconUrl" : "../../material/image/JonSnow/Jon_Snow_by_AniaEm.jpg",
+                    "charactorIconUrl" : "../../material/image/Stack/Jon_Snow_by_AniaEm.jpg",
                     "charactorInfoUrl" : "../charactorInfo/charctorInfo.html"
                 },
                 {
                     "charactorName" : "艾莉亚·史塔克",
-                    "charactorIconUrl" : "../../material/image/AryaStark.webp",
+                    "charactorIconUrl" : "../../material/image/Stack/AryaStark.webp",
                     "charactorInfoUrl" : "../charactorInfo/charctorInfo.html"
                 },
                 {
                     "charactorName" : "布兰·史塔克",
-                    "charactorIconUrl" : "../../material/image/BranStark.webp",
+                    "charactorIconUrl" : "../../material/image/Stack/BranStark.webp",
                     "charactorInfoUrl" : "../charactorInfo/charctorInfo.html"
                 },
                 {
                     "charactorName" : "罗柏·史塔克",
-                    "charactorIconUrl" : "../../material/image/RobbStack.webp",
+                    "charactorIconUrl" : "../../material/image/Stack/RobbStack.webp",
                     "charactorInfoUrl" : "../charactorInfo/charctorInfo.html"
                 },
                 {
                     "charactorName" : "珊莎·史塔克",
-                    "charactorIconUrl" : "../../material/image/SansaStark.webp",
+                    "charactorIconUrl" : "../../material/image/Stack/SansaStark.webp",
                     "charactorInfoUrl" : "../charactorInfo/charctorInfo.html"
                 },
                 {
                     "charactorName" : "瑞肯·史塔克",
-                    "charactorIconUrl" : "../../material/image/RickonStark.jpg",
+                    "charactorIconUrl" : "../../material/image/Stack/RickonStark.jpg",
                     "charactorInfoUrl" : "../charactorInfo/charctorInfo.html"
                 },
                 {
                     "charactorName" : "艾德·史塔克",
-                    "charactorIconUrl" : "../../material/image/NedStack.webp",
+                    "charactorIconUrl" : "../../material/image/Stack/NedStack.webp",
                     "charactorInfoUrl" : "../charactorInfo/charctorInfo.html"
                 },
                 {
                     "charactorName" : "凯特琳·徒利",
-                    "charactorIconUrl" : "../../material/image/CatelynTully.webp",
+                    "charactorIconUrl" : "../../material/image/Stack/CatelynTully.webp",
                     "charactorInfoUrl" : "../charactorInfo/charctorInfo.html"
                 }
+            ]
+        },
+        {
+            "houseUrl" : "",
+            "houseName" : "兰尼斯特家族(House Lannister of Casterly Rock)",
+            "houseImgUrl" : "../../material/image/houses/houseLannister.webp",
+            "intro" : "凯岩城的兰尼斯特家族（House Lannister of Casterly Rock）是维斯特洛的主要家族之一，世代兼领西境守护和凯岩城公爵之职，在征服战争前更是贵为凯岩王。家徽是绯红色土地上金黄色的怒吼雄狮，家族箴言是“听我怒吼！”此外，还有一句广为流传的非正式格言：“兰尼斯特有债必还”——在维斯特洛，其知名度甚至超过了家族箴言",
+            "charactors" : [
+                {
+                    "charactorName" : "泰温·兰尼斯特",
+                    "charactorIconUrl" : "../../material/image/Lannister/TywinLannister.webp",
+                    "charactorInfoUrl" : ""
+                },
+                {
+                    "charactorName" : "瑟曦·兰尼斯特",
+                    "charactorIconUrl" : "../../material/image/Lannister/CerseiLannister.webp",
+                    "charactorInfoUrl" : ""
+                },
+                {
+                    "charactorName" : "詹姆·兰尼斯特",
+                    "charactorIconUrl" : "../../material/image/Lannister/JeimeLannister.webp",
+                    "charactorInfoUrl" : ""
+                },
+                {
+                    "charactorName" : "提利昂·兰尼斯特",
+                    "charactorIconUrl" : "../../material/image/Lannister/TirionLannister.webp",
+                    "charactorInfoUrl" : ""
+                },
+                {
+                    "charactorName" : "凯冯·兰尼斯特",
+                    "charactorIconUrl" : "../../material/image/Lannister/KevanLannister.webp",
+                    "charactorInfoUrl" : ""
+                } 
             ]
         }
     ]
