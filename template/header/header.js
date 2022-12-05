@@ -45,7 +45,7 @@ window.onload = function () {
     });
 
     $("#logout").on("click", function () {
-        $.removeCookie("userName", { expires: 7, path: "/pages" });
+        $.removeCookie("userName", { expires: 7, path: "/WEB-Final/pages" });
         location.reload();
     });
 
