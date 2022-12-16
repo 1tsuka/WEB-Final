@@ -1,5 +1,5 @@
 {
-  "Post": [
+  "Post": {[
     {
       "id": 1,
       "name": "MCCO4rrQ3h",
@@ -12,5 +12,5 @@
       "online": true,
       "picture": "https://picsum.photos/seed/99/60/60"
     }
-  ]
+  ]}
 }
