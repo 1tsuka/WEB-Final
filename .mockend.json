@@ -1,4 +1,11 @@
 {
-  "Post": {"id": {"int":1}}
-
+  "User": {
+    "name": {
+      "string": [
+        "Willey Silva Braz",
+        "Joana Laysa Lima Cunha",
+        "Maria Ariadna Miranda Lacerda"
+      ]
+    }
+  }
 }
