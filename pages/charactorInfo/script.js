@@ -39,15 +39,6 @@ function toModify(){
     window.location.href="../charcatorInfoForm/charactorInfoForm.html"
 }
 
-var headerUrl = '../../template/header/header.tql'
-$(window).load(function() {
-    $('#slider').nivoSlider({
-        controlNav: false
-    });
-    $.get(headerUrl,function(result){
-        $('#header').html(result);
-    });
-}); 
 
 $('#commentBtn').on('click',function(){
     $('.inputArea').before("<p>"+$('#commentContent')[0].value+"</p>");
