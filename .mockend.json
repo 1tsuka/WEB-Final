@@ -1,35 +1,16 @@
 {
-  "Post": {
-    "cover": {
-      "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/270"
+  "Post": [
+    {
+      "id": 1,
+      "name": "MCCO4rrQ3h",
+      "online": false,
+      "picture": "https://picsum.photos/seed/43/60/60"
     },
-    "title": {
-      "loremWords": {
-        "minLength": 5,
-        "maxLength": 20
-      }
-    },
-    "body": {
-      "loremParagraphs": {
-        "minLength": 10,
-        "maxLength": 100
-      }
-    },
-    "tag": {
-      "string": [
-        "one",
-        "two",
-        "three"
-      ]
-    },
-    "isDraft": {
-      "boolean": {}
-    },
-    "createdAt": {
-      "dateTime": {
-        "min": "2010-01-01T00:00:00Z",
-        "max": "2020-12-31T23:59:59Z"
-      }
+    {
+      "id": 2,
+      "name": "kIfSa6kPqH",
+      "online": true,
+      "picture": "https://picsum.photos/seed/99/60/60"
     }
-  }
+  ]
 }
