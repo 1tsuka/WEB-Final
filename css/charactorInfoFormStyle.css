@@ -1,0 +1,53 @@
+@import url("../normalize.css");
+body{
+    margin: 0;
+}
+form{
+    width: 80%;
+    position: relative;
+    top: 80px;
+    left: 10%;
+    padding-bottom: 60px;
+}
+fieldset{
+    margin: 30px 0;
+}
+legend {
+    color: #fff;
+    padding: 3px 6px;
+    font-size: 30px;
+}
+label{
+    margin-right: 10px;
+}
+textarea{
+    width: 100%;
+}
+.items{
+    margin: 20px 0;
+}
+.work{
+    margin: 15px 0;
+}
+.submit{
+    width: 100px;
+    height: 30px;
+    float: right;
+}
+.brief div{
+    margin: 10px 0;
+}
+.works input{
+    margin: 0;
+}
+.deleteBtn{
+    margin-left: 10px;
+}
+#photo{
+    margin-top: 20px;
+}
+@media only screen and (max-width: 992px){
+    form{
+        top: 140px;
+    }
+}
