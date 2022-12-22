@@ -27,7 +27,7 @@ body{
 }
 @media only screen and (max-width: 992px){
     body{
-        background-image: url('material/cropped-1080-2400-144539.jpg');
+        background-image: url('/WEB-Final/material/cropped-1080-2400-144539.jpg');
     }
     .swiper-slide{
         font-size: 16px;
