@@ -364,14 +364,14 @@ var login = function(){
             }
             else{
                 $.cookie('userName',userName,{expires: 7, path: '/WEB-Final' })
-                window.location.href = '#/'
+                window.location.href = ''
                 location.reload();
             }
         })
     })
 }
 var routes = {
-    "#/": index,
+    "": index,
     "/menu": menu,
     "/charactor/:id": charactor,
     "/editCharactor/:id": editCharactor,
