@@ -15,7 +15,7 @@
     </div>
     <div id="menu">
         <ul>
-            <li><a href="#/">首页</a></li>
+            <li><a href="">首页</a></li>
             <li id="houses">
                 <a href="javascript:void(0)">
                     家族
