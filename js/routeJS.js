@@ -22,7 +22,7 @@ if (upload == undefined) {
             })
         }
     })
-    $.cookie("upload", true, { expires: 7, path: "" });
+    $.cookie("upload", true, { expires: 7, path: "/WEB-Final" });
 }
 
 function changeInfo() {
@@ -363,15 +363,15 @@ var login = function(){
                 $('#errorMsg').text('用户名或密码错误');
             }
             else{
-                $.cookie('userName',userName,{expires: 7, path: '' })
-                window.location.href = '#'
+                $.cookie('userName',userName,{expires: 7, path: '/WEB-Final' })
+                window.location.href = '#/'
                 location.reload();
             }
         })
     })
 }
 var routes = {
-    "": index,
+    "#/": index,
     "/menu": menu,
     "/charactor/:id": charactor,
     "/editCharactor/:id": editCharactor,
