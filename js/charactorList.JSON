@@ -3,7 +3,7 @@
         {
             "id": 1,
             "charactorName": "琼恩·雪诺",
-            "charactorIconUrl": "../../material/image/Stack/Jon_Snow_by_AniaEm.jpg",
+            "charactorIconUrl": "/WEB-Final/material/image/Stack/Jon_Snow_by_AniaEm.jpg",
             "brief": "琼恩·雪诺（Jon Snow）可能是艾德·史塔克的私生子，关于其生母则存在诸多推测。他和父亲嫡生的孩子，即琼恩同父异母的兄弟姐妹一起长大，却在接近成年之时加入了守夜人。他的冰原狼白灵通常伴随其左右。在卷一《权力的游戏》开始时，琼恩十四岁。他是书中主要的POV人物之一。",
             "engName": "Jon Snow",
             "gender": "男",
@@ -32,7 +32,7 @@
         {
             "id": 2,
             "charactorName": "艾莉亚·史塔克",
-            "charactorIconUrl": "material/image/Stack/AryaStark.webp",
+            "charactorIconUrl": "/WEB-Final/material/image/Stack/AryaStark.webp",
             "brief": "艾莉亚·史塔克（Arya Stark）是临冬城公爵艾德和凯特琳次女兼第三个孩子。她在《权力的游戏》开始时九岁。她有三个兄弟，分别为大哥罗柏、大弟布兰和小弟瑞肯，还有一个姐姐珊莎与同父异母哥哥琼恩·雪诺。和她的兄弟们一样，她有时会梦见自己是一只冰原狼。她的冰原狼名叫娜梅莉亚，名字源自洛伊拿的战士女王娜梅莉亚。",
             "engName": "Arya Stark",
             "gender": "女",
@@ -61,7 +61,7 @@
         {
             "id": 3,
             "charactorName": "布兰·史塔克",
-            "charactorIconUrl": "material/image/Stack/BranStark.webp",
+            "charactorIconUrl": "/WEB-Final/material/image/Stack/BranStark.webp",
             "brief": "布兰登·史塔克(Brandon Stark)，通常被简称为布兰（Bran），他是艾德和凯特琳的次子。严重的摔伤导致了他终生残疾，这极大的改变了他的生活。他需要仆人阿多的背负才能完成日常的活动。布兰有一只名叫夏天的冰原狼，并且他具有狼灵的能力，可以与狼精神相通。他还是一位绿先知，有时会做预言的梦。",
             "engName": "Brandon Stark",
             "gender": "男",
@@ -90,7 +90,7 @@
         {
             "id": 4,
             "charactorName": "罗柏·史塔克",
-            "charactorIconUrl": "material/image/Stack/RobbStack.webp",
+            "charactorIconUrl": "/WEB-Final/material/image/Stack/RobbStack.webp",
             "brief": "罗柏·史塔克（Robb Stark）是临冬城公爵艾德·史塔克和凯特琳的长子，临冬城的继承人。当父亲因所谓的叛国罪入狱后，他旋即举兵并联合河间地领主发兵南下，以营救自己的父亲。在艾德被处斩之后，他开始正式对抗铁王座，并被部下们拥立为北境之王。人称“少狼主”。他的冰原狼名叫灰风，始终与罗柏形影不离，参与了各种战斗。",
             "engName": "Robb Stark",
             "gender": "男",
@@ -119,7 +119,7 @@
         {
             "id": 5,
             "charactorName": "珊莎·史塔克",
-            "charactorIconUrl": "material/image/Stack/SansaStark.webp",
+            "charactorIconUrl": "/WEB-Final/material/image/Stack/SansaStark.webp",
             "brief": "珊莎·史塔克（Sansa Stark）是临冬城公爵艾德·史塔克和凯特琳·徒利长女兼第二个孩子。她有三个兄弟，分别为大哥罗柏、大弟布兰和小弟瑞肯，还有一个妹妹艾莉亚与同父异母哥哥琼恩·雪诺。她曾和七大王国王储乔佛里·拜拉席恩订婚，也曾与提利昂·兰尼斯特有一段强扭的姻缘。现在她正化名阿莲·石东藏身于艾林谷。珊莎是书中的一个主要POV人物。在电视剧中由苏菲·特纳(Sophie Tunner)扮演。",
             "engName": "Sansa Stark",
             "gender": "男",
@@ -148,7 +148,7 @@
         {
             "id": 6,
             "charactorName": "艾德·史塔克",
-            "charactorIconUrl": "material/image/Stack/NedStark.webp",
+            "charactorIconUrl": "/WEB-Final/material/image/Stack/NedStark.webp",
             "brief": "艾德·史塔克（Eddard Stark），昵称“奈德”(Ned)，是史塔克家族家主、临冬城公爵(Lord of Winterfell)、北境最高统治者、北境守护。与劳勃国王是从小一起长大的好友，并一同推翻了坦格利安王朝。最终艾德成为了劳勃国王的国王之手，后在政治角逐中失败遭受阴谋殒命君临。",
             "engName": "Eddard Stark",
             "gender": "男",
@@ -177,7 +177,7 @@
         {
             "id": 7,
             "charactorName": "泰温·兰尼斯特",
-            "charactorIconUrl": "material/image/Lannister/TywinLannister.webp",
+            "charactorIconUrl": "/WEB-Final/material/image/Lannister/TywinLannister.webp",
             "brief": "泰温·兰尼斯特（Tywin Lannister）是凯岩城公爵、兰尼斯港之盾和西境守护。泰温生性冷酷无情、精于谋算、控制欲极强，同时也是维斯特洛最有权力的领主之一。泰温是詹姆、瑟曦和提利昂·兰尼斯特的父亲，他喜爱詹姆和瑟曦，但看不起提利昂。一方面因为提利昂是个侏儒，另一让面是因为提利昂出生的时候难产，导致了泰温深爱的妻子乔安娜的死亡，同时泰温认为提利昂常常嫖妓玷污了家族荣誉。",
             "engName": "Tywin Lannister",
             "gender": "男",
@@ -206,7 +206,7 @@
         {
             "id": 8,
             "charactorName": "瑟曦·兰尼斯特",
-            "charactorIconUrl": "material/image/Lannister/CerseiLannister.webp",
+            "charactorIconUrl": "/WEB-Final/material/image/Lannister/CerseiLannister.webp",
             "brief": "瑟曦·兰尼斯特（Cersei Lannister）是泰温公爵和乔安娜夫人长女，是詹姆·兰尼斯特的孪生姐姐。在篡夺者战争之后她嫁给了新王劳勃·拜拉席恩，成为七大王国王后。在电视剧中由琳娜·海蒂(Lena Headey)扮演.在本书第四卷《群鸦的盛宴》中瑟曦成为了POV人物。",
             "engName": "Cersei Lannister",
             "gender": "女",
@@ -235,7 +235,7 @@
         {
             "id": 9,
             "charactorName": "詹姆·兰尼斯特",
-            "charactorIconUrl": "material/image/Lannister/JeimeLannister.webp",
+            "charactorIconUrl": "/WEB-Final/material/image/Lannister/JeimeLannister.webp",
             "brief": "詹姆·兰尼斯特（Jaime Lannister），是凯岩城领主泰温·兰尼斯特和他的妻子乔安娜夫人的第二个孩子，同时也是他们的长子。詹姆年仅十五岁就加入了疯王伊里斯的御林铁卫，是这支享有极高声誉的传奇性骑士队伍史上最年轻的成员。当他在篡夺者战争之中背叛伊里斯国王，并将其杀死在铁王座下的时候，世人又送给他“弑君者”(Kingslayer)这个充满轻蔑和鄙视意味的外号。詹姆一直都与他的双胞胎姐姐瑟曦秘密维持着肉体关系。他们一共生有二子一女：乔佛里、弥塞菈和托曼，尽管如此，在大多数人眼中，三个孩子一直被视为瑟曦和他的丈夫劳勃国王所生。",
             "engName": "Jaime Lannister",
             "gender": "男",
@@ -264,7 +264,7 @@
         {
             "id": 10,
             "charactorName": "提利昂·兰尼斯特",
-            "charactorIconUrl": "material/image/Lannister/TirionLannister.webp",
+            "charactorIconUrl": "/WEB-Final/material/image/Lannister/TirionLannister.webp",
             "brief": "提利昂·兰尼斯特（Tyrion Lannister）是凯岩城公爵泰温·兰尼斯特和乔安娜夫人的第三个也是最小的孩子。因为是个侏儒，他有时候被戏称为小恶魔和半人。他利用自己的智慧屡次化险为夷，帮助兰尼斯特家族赢得了五王之战，但命运的不公使得他成为了一个弑亲者和通缉犯，踏上了流亡之路。",
             "engName": "Tyrion Lannister",
             "gender": "男",
