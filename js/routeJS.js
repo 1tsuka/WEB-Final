@@ -220,7 +220,7 @@ var charactor = function (id) {
 var editCharactor = function (id) {
     var headerUrl = "/WEB-Final/template/charactorInfoForm.tql";
     var iconUrl, photoUrl;
-    $("#pageStyle").attr("href", "/WEB-Final/css/charactorInfoFormstyle.css");
+    $("#pageStyle").attr("href", "/WEB-Final/css/charactorInfoFormStyle.css");
     $(".swiper").empty();
     $.get(headerUrl, function (result) {
         $("#content-container").html(result);
