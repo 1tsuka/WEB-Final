@@ -150,7 +150,7 @@ function addWork(){
 
 
 var index = function () {
-    var swiperUrl = "template/swiper.tql";
+    var swiperUrl = "/WEB-Final/template/swiper.tql";
     $("#pageStyle").attr("href", "css/indexStyle.css");
     $("#localScript").attr("src", "");
     $("#content-container").empty();
@@ -170,7 +170,7 @@ var index = function () {
     });
 };
 var menu = function () {
-    $("#pageStyle").attr("href", "css/menuStyle.css");
+    $("#pageStyle").attr("href", "/WEB-Final/css/menuStyle.css");
     $("#localScript").attr("src", "");
     $(".swiper").empty();
     localforage.getItem("houseList", function(err, value){
@@ -183,7 +183,7 @@ var menu = function () {
 };
 
 var charactor = function (id) {
-    $("#pageStyle").attr("href", "/css/charactorInfoStyle.css");
+    $("#pageStyle").attr("href", "/WEB-Final/css/charactorInfoStyle.css");
     $(".swiper").empty();
     if($.cookie("changed") != undefined){
         $.removeCookie("changed", { expires: 7, path: "/WEB-Final" });
@@ -218,9 +218,9 @@ var charactor = function (id) {
 };
 
 var editCharactor = function (id) {
-    var headerUrl = "template/charactorInfoForm.tql";
+    var headerUrl = "/WEB-Final/template/charactorInfoForm.tql";
     var iconUrl, photoUrl;
-    $("#pageStyle").attr("href", "/css/charactorInfoFormstyle.css");
+    $("#pageStyle").attr("href", "/WEB-Final/css/charactorInfoFormstyle.css");
     $(".swiper").empty();
     $.get(headerUrl, function (result) {
         $("#content-container").html(result);
@@ -338,8 +338,8 @@ var editCharactor = function (id) {
 
 };
 var login = function(){
-    var loginUrl = "/template/login.tql";
-    $("#pageStyle").attr("href", "/css/loginStyle.css");
+    var loginUrl = "/WEB-Final/template/login.tql";
+    $("#pageStyle").attr("href", "/WEB-Final/css/loginStyle.css");
     $("#localScript").attr("src", "");
     $("#content-container").empty();
     $.get(loginUrl, function (result) {
