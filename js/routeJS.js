@@ -366,6 +366,7 @@ var login = function(){
             else{
                 $.cookie('userName',userName,{expires: 7, path: '/WEB-Final' })
                 window.location.href = '#'
+                location.reload();
             }
         })
     })
