@@ -232,7 +232,7 @@ var editCharactor = function (id) {
             console.log(reader);
             reader.onload = (e) => {
                 // 读取成功时：
-                url = e.target.result;
+                photoUrl = e.target.result;
             };
         });
         $("#icon").on("change", (e) => {
@@ -244,7 +244,6 @@ var editCharactor = function (id) {
             reader.onload = (e) => {
                 // 读取成功时：
                 iconUrl = e.target.result;
-                console.log(iconUrl)
             };
         });
         addWork();
