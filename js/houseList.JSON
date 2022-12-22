@@ -7,7 +7,7 @@
             "charactors" : [
                 {
                     "id":1,
-                    "charactorName" : "琼恩·雪诺(这个能看)",
+                    "charactorName" : "琼恩·雪诺",
                     "charactorIconUrl" : "/WEB-Final/material/image/Stack/Jon_Snow_by_AniaEm.jpg",
                     "charactorInfoUrl" : "#/charactor/1"
                 },
