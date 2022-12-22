@@ -2,74 +2,74 @@
     "houses":[
         {
             "houseName" : "史塔克家族(House Stark of Winterfell)",
-            "houseImgUrl" : "/WEB-Final/material/image/houses/houseStack.webp",
+            "houseImgUrl" : "/material/image/houses/houseStack.webp",
             "intro" : "第一代祖先是筑城者布兰登，维斯特洛最纯正的先民血裔。世世代代为北境之王，直到降服王托伦·史塔克自知不敌征服者伊耿·坦格利安的三只龙及强大军队后投降。宣誓效忠的家族有葛洛佛、波顿、菲林特、曼德勒、莫尔蒙、陶哈、赛文、安柏家族等。",
             "charactors" : [
                 {
                     "id":1,
                     "charactorName" : "琼恩·雪诺",
-                    "charactorIconUrl" : "/WEB-Final/material/image/Stack/Jon_Snow_by_AniaEm.jpg",
+                    "charactorIconUrl" : "/material/image/Stack/Jon_Snow_by_AniaEm.jpg",
                     "charactorInfoUrl" : "#/charactor/1"
                 },
                 {
                     "id":2,
                     "charactorName" : "艾莉亚·史塔克",
-                    "charactorIconUrl" : "/WEB-Final/material/image/Stack/AryaStark.webp",
+                    "charactorIconUrl" : "/material/image/Stack/AryaStark.webp",
                     "charactorInfoUrl" : "#/charactor/2"
                 },
                 {
                     "id":3,
                     "charactorName" : "布兰·史塔克",
-                    "charactorIconUrl" : "/WEB-Final/material/image/Stack/BranStark.webp",
+                    "charactorIconUrl" : "/material/image/Stack/BranStark.webp",
                     "charactorInfoUrl" : "#/charactor/3"
                 },
                 {
                     "id":4,
                     "charactorName" : "罗柏·史塔克",
-                    "charactorIconUrl" : "/WEB-Final/material/image/Stack/RobbStack.webp",
+                    "charactorIconUrl" : "/material/image/Stack/RobbStack.webp",
                     "charactorInfoUrl" : "#/charactor/4"
                 },
                 {
                     "id":5,
                     "charactorName" : "珊莎·史塔克",
-                    "charactorIconUrl" : "/WEB-Final/material/image/Stack/SansaStark.webp",
+                    "charactorIconUrl" : "/material/image/Stack/SansaStark.webp",
                     "charactorInfoUrl" : "#/charactor/5"
                 },
                 {
                     "id":6,
                     "charactorName" : "艾德·史塔克",
-                    "charactorIconUrl" : "/WEB-Final/material/image/Stack/NedStack.webp",
+                    "charactorIconUrl" : "/material/image/Stack/NedStack.webp",
                     "charactorInfoUrl" : "#/charactor/6"
                 }
             ]
         },
         {
             "houseName" : "兰尼斯特家族(House Lannister of Casterly Rock)",
-            "houseImgUrl" : "/WEB-Final/material/image/houses/houseLannister.webp",
+            "houseImgUrl" : "/material/image/houses/houseLannister.webp",
             "intro" : "凯岩城的兰尼斯特家族是维斯特洛的主要家族之一，世代兼领西境守护和凯岩城公爵之职，在征服战争前更是贵为凯岩王。家徽是绯红色土地上金黄色的怒吼雄狮，家族箴言是“听我怒吼！”此外，还有一句广为流传的非正式格言：“兰尼斯特有债必还”——在维斯特洛，其知名度甚至超过了家族箴言",
             "charactors" : [
                 {
                     "id":7,
                     "charactorName" : "泰温·兰尼斯特",
-                    "charactorIconUrl" : "/WEB-Final/material/image/Lannister/TywinLannister.webp",
+                    "charactorIconUrl" : "/material/image/Lannister/TywinLannister.webp",
                     "charactorInfoUrl" : "#/charactor/7"
                 },
                 {
                     "id":8,
                     "charactorName" : "瑟曦·兰尼斯特",
-                    "charactorIconUrl" : "/WEB-Final/material/image/Lannister/CerseiLannister.webp",
+                    "charactorIconUrl" : "/material/image/Lannister/CerseiLannister.webp",
                     "charactorInfoUrl" : "#/charactor/8"
                 },
                 {
                     "id":9,
                     "charactorName" : "詹姆·兰尼斯特",
-                    "charactorIconUrl" : "/WEB-Final/material/image/Lannister/JeimeLannister.webp",
+                    "charactorIconUrl" : "/material/image/Lannister/JeimeLannister.webp",
                     "charactorInfoUrl" : "#/charactor/9"
                 },
                 {
                     "id":10,
                     "charactorName" : "提利昂·兰尼斯特",
-                    "charactorIconUrl" : "/WEB-Final/material/image/Lannister/TirionLannister.webp",
+                    "charactorIconUrl" : "/material/image/Lannister/TirionLannister.webp",
                     "charactorInfoUrl" : "#/charactor/10"
                 }
             ]

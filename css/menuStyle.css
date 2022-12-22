@@ -1,4 +1,4 @@
-@import url("/WEB-Final/normalize.css");
+@import url("normalize.css");
 body{
     margin: 0;
     padding: 0;
@@ -76,7 +76,7 @@ body{
     width: 80px;
 }
 @media only screen and (max-width: 576px) {
-    #houseList{
+    #content-container{
         top: 150px;
     } 
     .house{
@@ -88,6 +88,7 @@ body{
     }
     .content{
         font-size: 16px;
+        display: block;
     }
 
     .navigation{
@@ -99,7 +100,7 @@ body{
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px){
-    #houseList{
+    #content-container{
         top: 150px;
     } 
     .house{
@@ -111,6 +112,7 @@ body{
     }
     .content{
         font-size: 16px;
+        display: block;
     }
     .navigation{
         width: 100%;
@@ -121,7 +123,7 @@ body{
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
-    #houseList{
+    #content-container{
         top: 150px;
     } 
     .house{
@@ -133,6 +135,7 @@ body{
     }
     .content{
         font-size: 20px;
+        display: block;
     }
     .name{
         font-size: 20px;

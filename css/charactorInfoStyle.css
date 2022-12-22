@@ -1,5 +1,5 @@
 
-@import url("/WEB-Final/normalize.css");
+@import url("normalize.css");
 @font-face {
     font-family: "阿里巴巴普惠体 2.0 45 Light";
     font-weight: 300;
@@ -153,6 +153,11 @@ button:hover{
     margin: 20px;
 }
 @media only screen and (max-width: 992px){
+    #content-container{
+        padding-left: 0px;   /* leftContent width */
+        padding-right: 0px;  /* rightContent width */
+        overflow: hidden;
+    }
     .icon{
         height: 200px;
         width: 144px;
@@ -162,8 +167,8 @@ button:hover{
     }
     .tab{
         position: absolute;
-        top: 220px;
-        left: 40px;
+        top: 190px;
+        left: 170px;
         width: 150px;
         height: 50px;
         /* justify-content: center;
@@ -199,5 +204,9 @@ button:hover{
     }
     .content h2:target{
         scroll-margin-top: 9rem;
+    }
+    dl dt{
+        display: inline-block;
+        min-width: 10px;
     }
 }

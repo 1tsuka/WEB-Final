@@ -22,7 +22,7 @@ if (upload == undefined) {
             })
         }
     })
-    $.cookie("upload", true, { expires: 7, path: "/WEB-Final" });
+    $.cookie("upload", true, { expires: 7, path: "" });
 }
 
 function changeInfo() {
@@ -186,7 +186,7 @@ var charactor = function (id) {
     $("#pageStyle").attr("href", "/WEB-Final/css/charactorInfoStyle.css");
     $(".swiper").empty();
     if($.cookie("changed") != undefined){
-        $.removeCookie("changed", { expires: 7, path: "/WEB-Final" });
+        $.removeCookie("changed", { expires: 7, path: "" });
         location.reload();
     }
     localforage.getItem("charactorList", function (err, value) {
@@ -220,7 +220,7 @@ var charactor = function (id) {
 var editCharactor = function (id) {
     var headerUrl = "/WEB-Final/template/charactorInfoForm.tql";
     var iconUrl, photoUrl;
-    $("#pageStyle").attr("href", "/WEB-Final/css/charactorInfoFormstyle.css");
+    $("#pageStyle").attr("href", "/WEB-Final/css/charactorInfoFormStyle.css");
     $(".swiper").empty();
     $.get(headerUrl, function (result) {
         $("#content-container").html(result);
@@ -286,7 +286,7 @@ var editCharactor = function (id) {
                 });
                 
             })
-            $.cookie("changed", true, { expires: 7, path: "/WEB-Final" });
+            $.cookie("changed", true, { expires: 7, path: "" });
             window.location.href = "#/charactor/" + id;
         }); 
     });
@@ -364,8 +364,9 @@ var login = function(){
                 $('#errorMsg').text('用户名或密码错误');
             }
             else{
-                $.cookie('userName',userName,{expires: 7, path: '/WEB-Final' })
+                $.cookie('userName',userName,{expires: 7, path: '' })
                 window.location.href = '#'
+                location.reload();
             }
         })
     })

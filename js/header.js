@@ -1,11 +1,11 @@
-var headerUrl = "template/header.tql";
+var headerUrl = "/WEB-Final/template/header.tql";
 
 $.get(headerUrl, function (result) {
     $("#header").html(result);
 });
 window.onload = function () {
 
-    var charactorMenuUrl = "template/charactorMenu.tql";
+    var charactorMenuUrl = "/WEB-Final/template/charactorMenu.tql";
     var show = false;
     var userName = $.cookie("userName");
 
@@ -45,7 +45,7 @@ window.onload = function () {
     });
 
     $("#logout").on("click", function () {
-        $.removeCookie("userName", { expires: 7, path: "/WEB-Final" });
+        $.removeCookie("userName", { expires: 7, path: "" });
         location.reload();
     });
 
