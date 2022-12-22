@@ -1,5 +1,3 @@
-const reload = false;
-const changed = false;
 var upload = $.cookie("upload");
 if (upload == undefined) {
     $.ajax({
@@ -24,7 +22,7 @@ if (upload == undefined) {
             })
         }
     })
-    $.cookie("upload", true, { expires: 7, path: "" });
+    $.cookie("upload", true, { expires: 7, path: "/WEB-Final" });
 }
 
 function changeInfo() {
@@ -185,10 +183,12 @@ var menu = function () {
 };
 
 var charactor = function (id) {
-    $("#pageStyle").attr("href", "css/charactorInfoStyle.css");
-    // $("#localScript").attr("src", "../charactorInfo/script.js");
+    $("#pageStyle").attr("href", "/css/charactorInfoStyle.css");
     $(".swiper").empty();
-
+    if($.cookie("changed") != undefined){
+        $.removeCookie("changed", { expires: 7, path: "/WEB-Final" });
+        location.reload();
+    }
     localforage.getItem("charactorList", function (err, value) {
         var info;
         console.log("getInfo");
@@ -220,7 +220,7 @@ var charactor = function (id) {
 var editCharactor = function (id) {
     var headerUrl = "template/charactorInfoForm.tql";
     var iconUrl, photoUrl;
-    $("#pageStyle").attr("href", "css/charactorInfoFormStyle.css");
+    $("#pageStyle").attr("href", "/css/charactorInfoFormstyle.css");
     $(".swiper").empty();
     $.get(headerUrl, function (result) {
         $("#content-container").html(result);
@@ -284,7 +284,9 @@ var editCharactor = function (id) {
                 localforage.setItem("houseList", value, function (err, data) {
                     console.log(data);
                 });
+                
             })
+            $.cookie("changed", true, { expires: 7, path: "/WEB-Final" });
             window.location.href = "#/charactor/" + id;
         }); 
     });
