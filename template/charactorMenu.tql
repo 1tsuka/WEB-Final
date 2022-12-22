@@ -1,0 +1,19 @@
+<div id="houseMenu">
+    <ul>
+        <li>
+            <a href="#/charactor/1">琼恩·雪诺</a>
+        </li>
+        <li>
+            <a href="#/charactor/2">艾莉亚·史塔克</a>
+        </li>
+        <li>
+            <a href="#/charactor/7">泰温·兰尼斯特</a>
+        </li>
+        <li>
+            <a href="#/charactor/10">提利昂·兰尼斯特</a>
+        </li>
+        <li>
+            <a href="#/menu/">更多···</a>
+        </li>
+    </ul>
+</div>

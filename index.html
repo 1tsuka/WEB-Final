@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Game of Throne</title>
+        <link rel="stylesheet" href="css/indexStyle.css" id="pageStyle" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
+    </head>
+    <body>
+        <div id="header"></div>
+        <!-- <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p>Most man rather deny the turth than face it.</p>
+                    <p>大部分的人宁可否认事实，也不愿面对真相。</p>
+                    <p>————提里昂</p>
+                </div>
+                <div class="swiper-slide">
+                    <p>
+                        It was queer how sometimes a child's innocent eyes can
+                        see things that grown men are blind to.
+                    </p>
+                    <p>
+                        说来奇怪，有时孩子无知的眼睛，反而能看到成年人视而不见的事实。
+                    </p>
+                    <p>————奈德</p>
+                </div>
+                <div class="swiper-slide">
+                    <p>
+                        If we attempt to silence this talk, we only lend it
+                        credence. Better to treat it with contempt, like the
+                        pathetic lie it is.
+                    </p>
+                    <p>
+                        假如我们试图制止谣言，只会显得真有其事，还不如嗤之以鼻，反正不过是个可笑的谎言。
+                    </p>
+                    <p>——小指头</p>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div> -->
+        <div id="content-container"></div>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/localforage@1.10.0/dist/localforage.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/ajax@0.0.4/lib/ajax.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jqueryrotate-slevomat-fork@1.0.0/jQueryRotate.min.js"></script>
+        <script src="https://rawgit.com/flatiron/director/master/build/director.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+        <script src="js/header.js"></script>
+        <script src="" id="localScript"></script>
+        <script src="js/routeJS.js"></script>
+        <script type="text/template" id="houseListTemplate">
+            <!--each遍历json数组-->
+            {{#each houses}}
+            <div class="house">
+                <div class="intro">
+                    <h3 class="title">{{houseName}}</h3>
+                    <p class="content">
+                        <img src="{{houseImgUrl}}" alt="" />
+                        {{intro}}
+                    </p>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        {{#each charactors}}
+                        <li>
+                            <a href="{{charactorInfoUrl}}">
+                                <img
+                                    src="{{charactorIconUrl}}"
+                                    class="icon"
+                                />
+                                <span class="name">{{charactorName}}</span>
+                            </a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+            {{/each}}
+        </script>
+        <script type="text/template" id="InfoTemplate">
+            <div id="center" class="detailed_info">
+                <div class="charactor_info">
+                    <button id="modify">修改</button>
+                    <h1>{{charactorName}}</h1>
+                    <div class="content">
+                        <h2 id="brief" class="title">
+                            <a href="#brief">简介</a>
+                        </h2>
+                        <p>
+                            {{brief}}
+                        </p>
+                        <img
+                            src="{{charactorIconUrl}}"
+                            alt="Jon_Snow_by_AniaEm"
+                            class="icon"
+                        />
+                        <dl>
+                            <dt>英文名</dt>
+                            <dd>{{engName}}</dd>
+                            <dt>性别</dt>
+                            <dd>{{gender}}</dd>
+                            <dt>生日</dt>
+                            <dd>伊耿历{{birthday}}年</dd>
+                        </dl>
+                    </div>
+                    <div class="content">
+                        <h2 id="personality" class="title">
+                            <a href="#personality">性格和外貌</a>
+                        </h2>
+                        <p>
+                            {{personality}}
+                        </p>
+                    </div>
+                    <div class="content">
+                        <h2 id="history" class="title">
+                            <a href="#history">历史</a>
+                        </h2>
+                        <p>
+                           {{history}}
+                        </p>
+                    </div>
+                </div>
+                <div class="actor_info">
+                    <button onclick="toModify()">修改</button>
+                    <h1>{{actorName}}</h1>
+                    <div class="content">
+                        <h2 id="basic_info" class="title">
+                            <a href="#basic_info">基本信息</a>
+                        </h2>
+                        <img
+                            src="{{actorIcon}}"
+                            alt=""
+                            class="icon"
+                        />
+                        <p>
+                            {{basicInfo}}
+                        </p>
+                    </div>
+                    <div class="content">
+                        <h2 id="performing_experience" class="title">
+                            <a href="#performing_experience">演艺经历</a>
+                        </h2>
+                        <p>
+                            {{performExp}}
+                        </p>
+                    </div>
+                    <div class="content">
+                        <h2 id="works" class="title">
+                            <a href="#works">作品</a>
+                        </h2>
+                        <table>
+                            <tr>
+                                <th>
+                                    <div class="para">时间</div>
+                                </th>
+                                <th>
+                                    <div class="para">类型</div>
+                                </th>
+                                <th>
+                                    <div class="para">名字</div>
+                                </th>
+                                <th>
+                                    <div class="para">饰演角色</div>
+                                </th>
+                            </tr>
+                            {{#each works}}
+                            <tr>
+                                <th>
+                                    <div class="para">{{time}}</div>
+                                </th>
+                                <th>
+                                    <div class="para">{{type}}</div>
+                                </th>
+                                <th>
+                                    <div class="para">{{workName}}</div>
+                                </th>
+                                <th>
+                                    <div class="para">{{rolePlayed}}</div>
+                                </th>
+                            </tr>
+                            {{/each}}
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="left" class="tab">
+                <ul>
+                    <li class="current">人物介绍</li>
+                    <li>演员介绍</li>
+                </ul>
+            </div>
+            <div id="right" class="menu">
+                <h3>In this article</h3>
+                <div class="charactor_info">
+                    <ul>
+                        <li>
+                            <a href="#brief">简介</a>
+                        </li>
+                        <li>
+                            <a href="#personality">性格和外貌</a>
+                        </li>
+                        <li>
+                            <a href="#history">历史</a>
+                        </li>
+                        <li>
+                            <a href="#comment">评论</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="actor_info">
+                    <ul>
+                        <li>
+                            <a href="#basic_info">基本信息</a>
+                        </li>
+                        <li>
+                            <a href="#performing_experience">演艺经历</a>
+                        </li>
+                        <li>
+                            <a href="#works">作品</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="comments content">
+                <h2 id="comment" class="title">
+                    <a href="#comment">评论</a>
+                </h2>
+                <p>111111111</p>
+                <p>22222222222</p>
+                <div class="inputArea">
+                    <textarea
+                        name="commentContent"
+                        id="commentContent"
+                        cols="145"
+                        rows="6"
+                        placeholder="请输入评论"
+                    ></textarea>
+                    <button id="commentBtn" type="button">提交</button>
+                    <!-- <textarea name="commentContent" id="commentContent" cols="145" rows="6"></textarea> -->
+                </div>
+            </div>
+        </script>
+    </body>
+</html>

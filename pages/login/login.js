@@ -26,8 +26,8 @@ $('#loginBtn').on('click',function(){
     }
     else{
         // $.cookie('login','true',{expires: 7, path: '/pages' })
-        $.cookie('userName',userName,{expires: 7, path: '/WEB-Final/pages' })
+        $.cookie('userName',userName,{expires: 7, path: '' })
         // console.log($.cookie('login '))
-        window.location.href = '../index/index.html'
+        window.location.href = '#/'
     }
 })

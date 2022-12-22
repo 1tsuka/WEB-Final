@@ -1,0 +1,22 @@
+<div class="swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <p>Most man rather deny the turth than face it.</p>
+            <p>大部分的人宁可否认事实，也不愿面对真相。</p>
+            <p>————提里昂</p>
+        </div>
+        <div class="swiper-slide">
+            <p>It was queer how sometimes a child's innocent eyes can see things that grown men are blind to.</p>
+            <p>说来奇怪，有时孩子无知的眼睛，反而能看到成年人视而不见的事实。</p>
+            <p>————奈德</p>
+        </div>
+        <div class="swiper-slide">
+            <p>If we attempt to silence this talk, we only lend it credence. Better to treat it with contempt, like the pathetic lie it is.</p>
+            <p>假如我们试图制止谣言，只会显得真有其事，还不如嗤之以鼻，反正不过是个可笑的谎言。</p>
+            <p>——小指头</p>
+        </div>
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>

@@ -1,0 +1,174 @@
+<form id="infoForm">
+    <fieldset>
+        <legend>角色信息</legend>
+        <div class="items">
+            <label for="charactorName">角色名字</label>
+            <input
+                type="text"
+                name="charactorName"
+                id="charactorName"
+                value="凯特琳·徒利"
+                required
+            />
+            <label for="house">所属家族</label>
+            <select name="houseId" id="house">
+                <option value="1">史塔克家族</option>
+                <option value="2">兰尼斯特家族</option>
+                <option value="3">提利尔家族</option>
+                <option value="4">拜拉席恩家族</option>
+                <option value="5">徒利家族</option>
+                <option value="6">艾林家族</option>
+                <option value="7">葛雷乔伊家族</option>
+                <option value="8">马泰尔家族</option>
+                <option value="9">坦格利安家族</option>
+            </select>
+        </div>
+        <div class="items brief">
+            <h2>简介</h2>
+            <div>
+                <textarea
+                    name="brief"
+                    id="brief"
+                    cols="150"
+                    rows="3"
+                    placeholder="请输入简介"
+                >凯特琳·徒利（Catelyn Tully）是临冬城夫人，艾德·史塔克公爵之妻。她的娘家是河间地的徒利家族。将她嫁给北境公爵促成了河间地与北境的联盟。她有五个孩子，并对每一个都怀有深深的爱，在一系列事件袭击史塔克家族后，如何拯救她的孩子们成为了她做出各种决断的主要考量。她没能逃过红色婚礼的浩劫，但她似乎将以另一种形式归来。</textarea>
+            </div>
+            <div>
+                <label for="engName">英文名</label>
+                <input
+                    type="text"
+                    name="engName"
+                    id="engName"
+                    value="Catelyn Tully"
+                />
+            </div>
+            <div>
+                <span>性别</span>
+                <input type="radio" id="male" name="gender" value="男"/>
+                <label for="male">男</label>
+                <input type="radio" id="female" name="gender" value="女" checked="true"/>
+                <label for="female">女</label>
+            </div>
+            <div>
+                <label for="birthday">生日</label>
+                <span>伊耿历</span>
+                <input type="number" id="birthday" placeholder="0" name="birthday" value="264"/>
+                <span>年</span>
+            </div>
+            <div>
+                <label for="icon">照片(画像)</label>
+                <input
+                    type="file"
+                    class="photo"
+                    id="icon"
+                    name="icon"
+                    value="/material/image/test/Catelyn_by_aniaem.webp"
+                    accept="image/png, image/jpeg"
+                />
+            </div>
+        </div>
+        <div class="item longText">
+            <h2>性格和外貌</h2>
+            <textarea
+                name="personality"
+                id="personality"
+                cols="150"
+                rows="3"
+                placeholder="请输入人物的性格外貌"
+            >凯特琳充满荣誉感，性情强韧，而又善良慷慨。她深深地爱着自己的子女。凯特琳相当美丽，她有着赤褐色的头发，蓝色的眼睛，和修长的手指。相识的人都认为凯特琳正直而诚实，行事遵从责任而非欲望。她深深地爱着自己的家人，并虔诚地信仰着七神。但在她眼里，丈夫艾德的私生子琼恩·雪诺是一个外人，她也从未原谅他把琼恩带回家里这一行为。</textarea>
+        </div>
+        <div class="item longText">
+            <h2>历史</h2>
+            <textarea
+                name="history"
+                id="history"
+                cols="150"
+                rows="10"
+                placeholder="请输入人物的过去历史"
+            >凯特琳在奔流城长大，她在这里与父亲的养子培提尔·贝里席结成了好友，后者是谷地的五指半岛一小块区域的继承人。培提尔爱上了凯特琳，而凯特琳虽然与之嬉戏玩耍，甚至笑闹亲吻，却仅仅把他看成自己的弟弟。在凯特琳12岁时，她被许配给临冬城的继承人布兰登·史塔克。听到这个消息，培提尔向布兰登提出为凯特琳决斗。布兰登轻易的获胜了，但在凯特琳的请求下饶了他的性命。在贝里席被送回五指半岛后，凯特琳再没有跟他说过话，而在布兰登死后，她更是未拆封就烧掉了贝里席寄给她的唯一一封信。尽管深爱着已跟自己有婚约的布兰登，但布兰登后来被“疯王”伊里斯杀死，而凯特琳也嫁给了布兰登的弟弟艾德。随着时间的推移，她也深深爱上了艾德。</textarea>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>演员信息</legend>
+        <div class="items">
+            <label for="actorName">演员名字</label>
+            <input
+                type="text"
+                id="actorName"
+                name="actorName"
+                value="米歇尔·菲尔利"
+                required
+            />
+        </div>
+        <div class="items">
+            <h2>基本信息</h2>
+            <textarea
+                name="basicInfo"
+                id="basicInfo"
+                cols="150"
+                rows="10"
+                placeholder="请输入基本信息"
+            >米歇尔·菲尔利（Michelle Fairley），1963年7月11日  生于英国北爱尔兰伦敦德里郡科尔雷因（Coleraine, County Londonderry, Northern Ireland, UK  ），英国影视女演员。</textarea>
+            <br />
+            <label for="photo">照片</label>
+            <input
+                type="file"
+                id="photo"
+                name="photo"
+                accept="image/png, image/jpeg"
+                value="/material/image/test/OIP.jpg"
+            />
+        </div>
+        <div class="items">
+            <h2>演艺经历</h2>
+            <textarea
+                name="performExp"
+                id="performExp"
+                cols="150"
+                rows="10"
+                placeholder="请输入演艺经历"
+                
+            >在青少年时期，她就是阿尔斯特青年剧院的一名成员，虽然只是业余爱好，但是在那里她爱上了表演。从文法学校毕业后，跟随Fringe Benefits剧团继续提高自己的演技。.1980年中期，她的导师推荐她去参演爱尔兰剧作家Christina Reid的作品“Joyriders”，Michelle赢下了这个角色并且在1986年Tricycle Theatre成功站上伦敦中型以上剧场。她的首次银幕亮相令人印象深刻，在斯蒂芬·波利亚科夫 （Stephen Poliakoff）1988的惊悚片《隐市》（Hidden City）中饰演清洁工得角色。上世纪90年代后期，她出演了一系列高质量的电视制作，尤其引人注意的是BBC长寿剧集"Lovejoy"(1986-94)和ITV的“摩斯警长”（Inspector Morse）(1987-2000)。在1994年，在贝尔法斯特老博物馆艺术中心，Ariel Dorfman的紧张戏剧“Death and the Maiden”的爱尔兰首映上演惊艳回归，剧中她饰演一个报复心强的前政治犯，反转报复曾经对她施虐的拷问者。此外她还参演了一些电视电影，例如1996年Channel 4频道的犯罪剧“Comics”以及同年BBC的"The Precious Blood" 。同年在设定在贝尔法斯特的BBC喜剧"Safeand Sound" 中担任主角，Michelle在该剧中饰演Tommy嗜酒，自由奔放的妹妹Eleanor，同时也是Dougie恋爱的对象。虽然该剧只拍摄了一季，但是却是Michelle更广阔的戏路的开始。</textarea>
+        </div>
+        <div class="items" id="works">
+            <h2>作品</h2>
+           <div class="work" name="work1">
+                <label for="time">时间: </label>
+                <input type="month" id="time" name="work.time" value="2015-06">
+                <label for="type">类型: </label>
+                <select name="work.type" id="type">
+                    <option value="电影">电影</option>
+                    <option value="电视剧">电视剧</option>
+                    <option value="舞台剧">舞台剧</option>
+                    <option value="歌剧">歌剧</option>
+                </select>
+                <label for="workName">作品名字: </label>
+                <input type="text" name="work.workName" id="workName" value="海洋深处">
+                <label for="rolePlayed">饰演角色: </label>
+                <input type="text" name="work.rolePlayed" id="rolePlayed" value="Mrs. Nickerson">
+                <button onclick=deleteWork() type="button">删除</button>
+            </div>
+            <div class="work" name="work1">
+                <label for="time">时间: </label>
+                <input type="month" id="time" name="work.time" value="2010-11">
+                <label for="type">类型: </label>
+                <select name="work.type" id="type">
+                    <option value="电影">电影</option>
+                    <option value="电视剧">电视剧</option>
+                    <option value="舞台剧">舞台剧</option>
+                    <option value="歌剧">歌剧</option>
+                </select>
+                <label for="workName">作品名字: </label>
+                <input type="text" name="work.workName" id="workName" value="哈利·波特与死亡圣器（上）">
+                <label for="rolePlayed">饰演角色: </label>
+                <input type="text" name="work.rolePlayed" id="rolePlayed" value="Mrs. Granger">
+                <button onclick=deleteWork() type="button">删除</button>
+            </div>
+            <button id="addBtn" type="button">
+                新增作品
+            </button>
+        </div>
+    </fieldset>
+    <input type="submit" value="提交" class="submit" id="submit"/>
+</form>
